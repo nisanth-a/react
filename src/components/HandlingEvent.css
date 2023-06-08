@@ -1,0 +1,13 @@
+.eventHandling-content {
+    background-color: rgb(215, 237, 229);
+    padding: 90px;
+}
+
+.ui .form .fields {
+    display: flex;
+    flex-direction: column;
+}
+.form-tag {
+    width: 24%;
+    height: 42%;
+}
