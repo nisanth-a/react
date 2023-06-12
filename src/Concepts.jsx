@@ -12,7 +12,7 @@ function Concepts() {
       </span>
 
       <div className="container text-center">
-        <div className="row">
+        <div className="row-concepts">
           <div className="col">
             <ul className="concepts-table">
               <h3>Session 1 & 2</h3>
@@ -31,7 +31,11 @@ function Concepts() {
               <Link to="/state" className="concept-links">
                 <li className="table-contents">State</li>
               </Link>
-              <h3>Session 3</h3>
+            </ul>
+          </div>
+          <div className="col">
+            <h3>Session 3</h3>
+            <ul className="concepts-table">
               <Link to="/lifecycle-methods" className="concept-links">
                 <li className="table-contents">
                   Life Cycle Methods in class components
@@ -43,9 +47,19 @@ function Concepts() {
               <Link to="/conditional-rendering" className="concept-links">
                 <li className="table-contents">Conditional Rendering</li>
               </Link>
+            </ul>
+          </div>
+          <div className="col">
+            <ul className="concepts-table">
               <h3>Session 4</h3>
               <Link to="/forms" className="concept-links">
                 <li className="table-contents">Forms</li>
+              </Link>
+              <Link to="/lifting-state-up" className="concept-links">
+                <li className="table-contents">Lifting State Up</li>
+              </Link>
+              <Link to="/composition-inheritance" className="concept-links">
+                <li className="table-contents">Composition vs Inheritance</li>
               </Link>
               <Link to="/type-checking" className="concept-links">
                 <li className="table-contents">Type Checking</li>
@@ -53,10 +67,8 @@ function Concepts() {
               <Link to="/uni-directional" className="concept-links">
                 <li className="table-contents">Uni-Directional Data Flow</li>
               </Link>
-              
             </ul>
           </div>
-          <div className="col"></div>
         </div>
       </div>
     </>
