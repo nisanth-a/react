@@ -10,12 +10,13 @@ import LifecycleMethods from "./components/LifecycleMethods";
 import HandlingEvent from "./components/HandlingEvent";
 import ConditionalRendering from "./components/ConditionalRendering";
 import TypeCheck from "./components/TypeChecking";
-import { UniDirectionalDataFlow } from "./UniDirectionalDataFlow";
+import { UniDirectionalDataFlow } from "./components/UniDirectionalDataFlow";
+import Forms from "./components/Forms";
 
 function App() {
   const handleButtonClick = (name) => {
-    alert(`Button clicked by ${name}`)
-  }
+    alert(`Button clicked by ${name}`);
+  };
   return (
     <div className="App">
       <BrowserRouter>
@@ -36,6 +37,7 @@ function App() {
             path="/conditional-rendering"
             element={<ConditionalRendering />}
           ></Route>
+          <Route path="/forms" element={<Forms />}></Route>
           <Route
             path="/type-checking"
             element={
@@ -44,9 +46,7 @@ function App() {
           ></Route>
           <Route
             path="/uni-directional"
-            element={
-              <UniDirectionalDataFlow />
-            }
+            element={<UniDirectionalDataFlow />}
           ></Route>
         </Routes>
       </BrowserRouter>

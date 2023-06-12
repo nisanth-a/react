@@ -49,3 +49,10 @@
 .concept-links {
     text-decoration: none;
 }
+
+.row-concepts {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 30px;
+}
