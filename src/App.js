@@ -9,8 +9,13 @@ import State from "./components/State";
 import LifecycleMethods from "./components/LifecycleMethods";
 import HandlingEvent from "./components/HandlingEvent";
 import ConditionalRendering from "./components/ConditionalRendering";
+import TypeCheck from "./components/TypeChecking";
+import { UniDirectionalDataFlow } from "./UniDirectionalDataFlow";
 
 function App() {
+  const handleButtonClick = (name) => {
+    alert(`Button clicked by ${name}`)
+  }
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,9 +27,27 @@ function App() {
           <Route path="/component" element={<Component />}></Route>
           <Route path="/props" element={<Props />}></Route>
           <Route path="/state" element={<State />}></Route>
-          <Route path="/lifecycle-methods" element={<LifecycleMethods />}></Route>
+          <Route
+            path="/lifecycle-methods"
+            element={<LifecycleMethods />}
+          ></Route>
           <Route path="/handling-events" element={<HandlingEvent />}></Route>
-          <Route path="/conditional-rendering" element={<ConditionalRendering />}></Route>
+          <Route
+            path="/conditional-rendering"
+            element={<ConditionalRendering />}
+          ></Route>
+          <Route
+            path="/type-checking"
+            element={
+              <TypeCheck name={"Innova"} age={25} onClick={handleButtonClick} />
+            }
+          ></Route>
+          <Route
+            path="/uni-directional"
+            element={
+              <UniDirectionalDataFlow />
+            }
+          ></Route>
         </Routes>
       </BrowserRouter>
     </div>

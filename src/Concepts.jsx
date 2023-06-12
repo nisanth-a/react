@@ -15,6 +15,7 @@ function Concepts() {
         <div className="row">
           <div className="col">
             <ul className="concepts-table">
+              <h3>Session 1 & 2</h3>
               <Link to="/introduction" className="concept-links">
                 <li className="table-contents">Introduction to React</li>
               </Link>
@@ -30,9 +31,7 @@ function Concepts() {
               <Link to="/state" className="concept-links">
                 <li className="table-contents">State</li>
               </Link>
-              <Link to="" className="concept-links">
-                <li className="table-contents">Hooks</li>
-              </Link>
+              <h3>Session 3</h3>
               <Link to="/lifecycle-methods" className="concept-links">
                 <li className="table-contents">
                   Life Cycle Methods in class components
@@ -44,6 +43,17 @@ function Concepts() {
               <Link to="/conditional-rendering" className="concept-links">
                 <li className="table-contents">Conditional Rendering</li>
               </Link>
+              <h3>Session 4</h3>
+              <Link to="/forms" className="concept-links">
+                <li className="table-contents">Forms</li>
+              </Link>
+              <Link to="/type-checking" className="concept-links">
+                <li className="table-contents">Type Checking</li>
+              </Link>
+              <Link to="/uni-directional" className="concept-links">
+                <li className="table-contents">Uni-Directional Data Flow</li>
+              </Link>
+              
             </ul>
           </div>
           <div className="col"></div>
