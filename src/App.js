@@ -12,11 +12,10 @@ import ConditionalRendering from "./components/ConditionalRendering";
 import TypeCheck from "./components/TypeChecking";
 import { UniDirectionalDataFlow } from "./components/UniDirectionalDataFlow";
 import Forms from "./components/Forms";
+import Composition from "./components/Composition";
+import StateParent from "./components/lifting-state-up/StateParent";
 
 function App() {
-  const handleButtonClick = (name) => {
-    alert(`Button clicked by ${name}`);
-  };
   return (
     <div className="App">
       <BrowserRouter>
@@ -38,11 +37,14 @@ function App() {
             element={<ConditionalRendering />}
           ></Route>
           <Route path="/forms" element={<Forms />}></Route>
+          <Route path="/lifting-state-up" element={<StateParent />}></Route>
+          <Route
+            path="/composition-inheritance"
+            element={<Composition />}
+          ></Route>
           <Route
             path="/type-checking"
-            element={
-              <TypeCheck name={"Innova"} age={25} onClick={handleButtonClick} />
-            }
+            element={<TypeCheck name={"Innova"} age={25} />}
           ></Route>
           <Route
             path="/uni-directional"
