@@ -4,7 +4,7 @@ function Rendering() {
   return (
     <>
       <div>Rendering</div>
-      <h3>Nisanth afridi react techs</h3>
+      <h3>Ajay afridi react techs</h3>
     </>
   );
 }
