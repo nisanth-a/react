@@ -8,7 +8,9 @@ export const UniDirectionalDataFlow = () => {
 
   return (
     <>
-      <div>UniDirectionalDataFlow</div>
+      <div>
+        <h1>UniDirectionalDataFlow</h1>
+      </div>
       <div>
         <h2>Parent Component</h2>
         <p>Count: {count}</p>
