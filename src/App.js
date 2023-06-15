@@ -11,12 +11,10 @@ import HandlingEvent from "./components/HandlingEvent";
 import ConditionalRendering from "./components/ConditionalRendering";
 import TypeCheck from "./components/TypeChecking";
 import { UniDirectionalDataFlow } from "./components/UniDirectionalDataFlow";
+import ParentComponent from "./components/ContextAPI";
 import Forms from "./components/Forms";
 
 function App() {
-  const handleButtonClick = (name) => {
-    alert(`Button clicked by ${name}`);
-  };
   return (
     <div className="App">
       <BrowserRouter>
@@ -41,12 +39,16 @@ function App() {
           <Route
             path="/type-checking"
             element={
-              <TypeCheck name={"Innova"} age={25} onClick={handleButtonClick} />
+              <TypeCheck name={"Innova"} age={25} />
             }
           ></Route>
           <Route
             path="/uni-directional"
             element={<UniDirectionalDataFlow />}
+          ></Route>
+          <Route
+            path="/context-API"
+            element={<ParentComponent />}
           ></Route>
         </Routes>
       </BrowserRouter>
