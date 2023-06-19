@@ -1,17 +1,21 @@
 .App {
   text-align: center;
 }
+input[type="text"],
+input[type="password"] {
+  -webkit-appearance: auto;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  color: rgb(8 126 164/var(--tw-text-opacity));
+  color: rgb(8 126 164 / var(--tw-text-opacity));
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    color: rgb(8 126 164/var(--tw-text-opacity));
+    color: rgb(8 126 164 / var(--tw-text-opacity));
   }
 }
 
