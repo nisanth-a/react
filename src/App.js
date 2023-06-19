@@ -10,6 +10,7 @@ import HandlingEvent from "./components/HandlingEvent";
 import ConditionalRendering from "./components/ConditionalRendering";
 import TypeCheck from "./components/TypeChecking";
 import { UniDirectionalDataFlow } from "./components/UniDirectionalDataFlow";
+import ParentComponent from "./components/ContextAPI";
 import Forms from "./components/Forms";
 import Composition from "./components/Composition";
 import StateParent from "./components/lifting-state-up/StateParent";
@@ -21,6 +22,7 @@ import HomeRouting from "./components/Routing/HomeRouting";
 import Employees from "./components/Routing/Employees";
 import Departments from "./components/Routing/Departments";
 import Projects from "./components/Routing/Projects";
+import Fragments from "./components/Fragments";
 
 function App() {
   return (
@@ -52,11 +54,21 @@ function App() {
 
           <Route
             path="/type-checking"
-            element={<TypeCheck name={"Innova"} age={25} />}
+            element={
+              <TypeCheck name={"Innova"} age={25} />
+            }
           ></Route>
           <Route
             path="/uni-directional"
             element={<UniDirectionalDataFlow />}
+          ></Route>
+          <Route
+            path="/context-API"
+            element={<ParentComponent />}
+          ></Route>
+          <Route
+            path="/fragments"
+            element={<Fragments />}
           ></Route>
           <Route path="ref-react" element={<VideoPlayer />} />
 

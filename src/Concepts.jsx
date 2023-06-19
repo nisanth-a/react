@@ -80,10 +80,10 @@ function Concepts() {
               <Link to="/ref-react" className="concept-links">
                 <li className="table-contents">Refs in React</li>
               </Link>
-              <Link to="/composition-inheritance" className="concept-links">
+              <Link to="/context-API" className="concept-links">
                 <li className="table-contents">Context API</li>
               </Link>
-              <Link to="/type-checking" className="concept-links">
+              <Link to="/fragments" className="concept-links">
                 <li className="table-contents">Fragments</li>
               </Link>
             </ul>

@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 
 export const UniDirectionalDataFlow = () => {
+  
+  const [count, setCount] = useState(0);
   const incrementCounter = () => {
     setCount(count + 1);
   };
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <h1>UniDirectionalDataFlow</h1>
-      </div>
+      <div><h1>UniDirectionalDataFlow</h1></div>
       <div>
         <h2>Parent Component</h2>
         <p>Count: {count}</p>
