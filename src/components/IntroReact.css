@@ -16,7 +16,7 @@
     grid-gap: 20px;
 }
 .intro-react-right {
-    background-color: rgb(190, 190, 241);
+    background-color: rgb(220, 220, 242);
     border-radius: 30px;
 }
 .installationReact {
@@ -25,21 +25,21 @@
     grid-gap: 20px;
 }
 .introductionReact {
-    background-color: rgb(194, 242, 242);
+    background-color: rgb(226, 243, 243);
     border-radius: 9px 9px 0px 0px;
     margin: 12px;
     margin-bottom: 0px;
     padding: 30px;
 }
 .installationReact {
-    background-color: rgb(190, 190, 241);
+    background-color: rgb(220, 220, 242);
     border-radius: 0px 0px 9px 9px;
     margin: 12px;
     margin-top: 0px;
     padding: 30px;
 }
 .installationReact-heading {
-    background-color: rgb(190, 190, 241);
+    background-color: rgb(220, 220, 242);
     margin: 0px 12px;
     padding: 30px 0px 0px 0px;
 }
@@ -50,7 +50,7 @@
 .intro-article {
     width: 870px;
     height: fit-content;
-    background-color: rgb(190, 190, 241);
+    background-color: rgb(220, 220, 242);
     padding: 18px;
     border-radius: 30px;
     margin: 10px;
@@ -59,7 +59,7 @@
 }
 .installLeftTab,
 .installRightTab {
-    background-color: rgb(194, 242, 242);
+    background-color: rgb(226, 243, 243);
     padding: 18px;
     margin: 12px;
     border-radius: 9px;
