@@ -8,22 +8,24 @@ const ParentComponent = () => {
     const sharedData = 'Hello, I am shared data!';
 
     return (
-        <MyContext.Provider value={sharedData}>
+        <>
+            <MyContext.Provider value={sharedData}>
+                <ChildComponent2 />
+            </MyContext.Provider><hr></hr>
+
             <ChildComponent1 />
-            <ChildComponent2 />
-        </MyContext.Provider>
+
+        </>
     );
 };
 
 // Step 3a: Create a Child Component that Consumes the Context using Consumer Component
+
 const ChildComponent1 = () => {
     return (
         <div>
-            <h2>Child Componen-1</h2>
-            <MyContext.Consumer>
-                {value => <p>{value}</p>}
-            </MyContext.Consumer><hr></hr>
-            <AnotherChildComponent />
+            <h2>Child Component-1</h2>
+            <p>This component can't access the value</p>
         </div>
     );
 };
@@ -33,11 +35,11 @@ const ChildComponent2 = () => {
             <h2>Child Component-2</h2>
             <MyContext.Consumer>
                 {value => <p>{value}</p>}
-            </MyContext.Consumer><hr></hr>
+            </MyContext.Consumer>
+            <AnotherChildComponent />
         </div>
     );
 };
-
 
 // Step 3b: Create a Child Component that Consumes the Context using useContext Hook (Functional Components)
     const AnotherChildComponent = () => {
