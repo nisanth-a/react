@@ -15,6 +15,14 @@ import Forms from "./components/Forms";
 import Composition from "./components/Composition";
 import StateParent from "./components/lifting-state-up/StateParent";
 import Counter from "./components/State/Counter";
+import SimpleRef from "./components/Refs-concepts/SimpleRef";
+import LogIn from "./components/Refs-concepts/LogIn";
+import VideoPlayer from "./components/Refs-concepts/VideoPlayer";
+import HomeRouting from "./components/Routing/HomeRouting";
+import Employees from "./components/Routing/Employees";
+import Departments from "./components/Routing/Departments";
+import Projects from "./components/Routing/Projects";
+import Fragments from "./components/Fragments";
 
 function App() {
   return (
@@ -58,6 +66,17 @@ function App() {
             path="/context-API"
             element={<ParentComponent />}
           ></Route>
+          <Route
+            path="/fragments"
+            element={<Fragments />}
+          ></Route>
+          <Route path="ref-react" element={<VideoPlayer />} />
+
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/departments" element={<Departments />} />
+          <Route path="/projects" element={<Projects />} />
+
+          <Route path="/homerouting" element={<HomeRouting />} />
         </Routes>
       </BrowserRouter>
     </div>

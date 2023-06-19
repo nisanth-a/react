@@ -67,8 +67,66 @@ function Concepts() {
               <Link to="/uni-directional" className="concept-links">
                 <li className="table-contents">Uni-Directional Data Flow</li>
               </Link>
-              <Link to="/Context-API" className="concept-links">
-                <li className="table-contents">ContextAPI</li>
+            </ul>
+          </div>
+        </div>
+        <div className="row-concepts">
+          <div className="col">
+            <ul className="concepts-table">
+              <h3>Session 5</h3>
+              <Link to="/homerouting" className="concept-links">
+                <li className="table-contents">React Routing</li>
+              </Link>
+              <Link to="/ref-react" className="concept-links">
+                <li className="table-contents">Refs in React</li>
+              </Link>
+              <Link to="/context-API" className="concept-links">
+                <li className="table-contents">Context API</li>
+              </Link>
+              <Link to="/fragments" className="concept-links">
+                <li className="table-contents">Fragments</li>
+              </Link>
+            </ul>
+          </div>
+
+          <div className="col" style={{ visibility: "hidden" }}>
+            <ul className="concepts-table">
+              <h3>Session 6</h3>
+              <Link to="/forms" className="concept-links">
+                <li className="table-contents">React Hooks</li>
+              </Link>
+              <Link to="/lifting-state-up" className="concept-links">
+                <li className="table-contents">Lifting State Up</li>
+              </Link>
+              <Link to="/composition-inheritance" className="concept-links">
+                <li className="table-contents">Composition vs Inheritance</li>
+              </Link>
+              <Link to="/type-checking" className="concept-links">
+                <li className="table-contents">Type Checking</li>
+              </Link>
+              <Link to="/uni-directional" className="concept-links">
+                <li className="table-contents">Uni-Directional Data Flow</li>
+              </Link>
+            </ul>
+          </div>
+
+          <div className="col" style={{ visibility: "hidden" }}>
+            <ul className="concepts-table">
+              <h3>Session 7</h3>
+              <Link to="/forms" className="concept-links">
+                <li className="table-contents">Forms</li>
+              </Link>
+              <Link to="/lifting-state-up" className="concept-links">
+                <li className="table-contents">Lifting State Up</li>
+              </Link>
+              <Link to="/composition-inheritance" className="concept-links">
+                <li className="table-contents">Composition vs Inheritance</li>
+              </Link>
+              <Link to="/type-checking" className="concept-links">
+                <li className="table-contents">Type Checking</li>
+              </Link>
+              <Link to="/uni-directional" className="concept-links">
+                <li className="table-contents">Uni-Directional Data Flow</li>
               </Link>
             </ul>
           </div>
