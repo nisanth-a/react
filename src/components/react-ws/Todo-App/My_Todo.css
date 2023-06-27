@@ -1,0 +1,40 @@
+.My_Todo {
+  background-color: #ffcda8;
+  margin-left: 33%;
+  margin-top: 10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+}
+.todo-title {
+  margin-left: -50px;
+  padding-top: 20px;
+}
+.input-text {
+  border: solid black 1px;
+  border-radius: 4px;
+  height: 25px;
+}
+.button {
+  margin-left: 20px;
+  width: 60px;
+  height: 28px;
+  border: solid black 1px;
+  border-radius: 4px;
+  background-color: #ff8551;
+}
+.buttonn {
+  margin-left: 20px;
+  padding-left: -80px;
+  width: 60px;
+  border: solid black 1px;
+  border-radius: 4px;
+}
+/* #un-ordered{
+    margin-left: 95px;
+  } */
+#list-items {
+  display: table;
+  padding: 5px;
+  align-content: center;
+}

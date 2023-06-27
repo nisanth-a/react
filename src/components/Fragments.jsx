@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Fragments = () => {
-  return (
-    <p>Hello I am AJAY DEV</p>  
-  )
-}
+  return <p>Hello I am AFRIDI SHAIK MADHIRE DEV</p>;
+};
 
-export default Fragments
+export default Fragments;
