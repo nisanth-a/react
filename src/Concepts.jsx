@@ -88,29 +88,32 @@ function Concepts() {
               </Link>
             </ul>
           </div>
-
-          <div className="col" style={{ visibility: "hidden" }}>
+          <div className="col">
             <ul className="concepts-table">
-              <h3>Session 6</h3>
-              <Link to="/forms" className="concept-links">
-                <li className="table-contents">React Hooks</li>
+              <h3>React Workshop</h3>
+              <Link to="/basic-calc" className="concept-links">
+                <li className="table-contents">Basic Calculator</li>
               </Link>
-              <Link to="/lifting-state-up" className="concept-links">
-                <li className="table-contents">Lifting State Up</li>
-              </Link>
-              <Link to="/composition-inheritance" className="concept-links">
-                <li className="table-contents">Composition vs Inheritance</li>
-              </Link>
-              <Link to="/type-checking" className="concept-links">
-                <li className="table-contents">Type Checking</li>
-              </Link>
-              <Link to="/uni-directional" className="concept-links">
-                <li className="table-contents">Uni-Directional Data Flow</li>
+              <Link to="/todo-app" className="concept-links">
+                <li className="table-contents">TODO App</li>
               </Link>
             </ul>
           </div>
 
           <div className="col" style={{ visibility: "hidden" }}>
+            <ul className="concepts-table">
+              <h3>Session 6</h3>
+              <Link to="/hooks" className="concept-links">
+                <li className="table-contents">React Hooks</li>
+              </Link>
+              <Link to="/types-of-hooks" className="concept-links">
+                <li className="table-contents">Types of Hooks</li>
+              </Link>
+            </ul>
+          </div>
+        </div>
+        {/* <div className="row-concepts">
+          <div className="col">
             <ul className="concepts-table">
               <h3>Session 7</h3>
               <Link to="/forms" className="concept-links">
@@ -130,7 +133,7 @@ function Concepts() {
               </Link>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

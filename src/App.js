@@ -23,6 +23,7 @@ import Employees from "./components/Routing/Employees";
 import Departments from "./components/Routing/Departments";
 import Projects from "./components/Routing/Projects";
 import Fragments from "./components/Fragments";
+import Calculator from "./components/react-ws/calculator/Calculator";
 
 function App() {
   return (
@@ -54,22 +55,14 @@ function App() {
 
           <Route
             path="/type-checking"
-            element={
-              <TypeCheck name={"Innova"} age={25} />
-            }
+            element={<TypeCheck name={"Innova"} age={25} />}
           ></Route>
           <Route
             path="/uni-directional"
             element={<UniDirectionalDataFlow />}
           ></Route>
-          <Route
-            path="/context-API"
-            element={<ParentComponent />}
-          ></Route>
-          <Route
-            path="/fragments"
-            element={<Fragments />}
-          ></Route>
+          <Route path="/context-API" element={<ParentComponent />}></Route>
+          <Route path="/fragments" element={<Fragments />}></Route>
           <Route path="ref-react" element={<VideoPlayer />} />
 
           <Route path="/employees" element={<Employees />} />
@@ -77,6 +70,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
 
           <Route path="/homerouting" element={<HomeRouting />} />
+          <Route path="/basic-calc" element={<Calculator />} />
+          <Route path="/todo-app" element={<HomeRouting />} />
         </Routes>
       </BrowserRouter>
     </div>
