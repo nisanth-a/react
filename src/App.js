@@ -24,6 +24,7 @@ import Departments from "./components/Routing/Departments";
 import Projects from "./components/Routing/Projects";
 import Fragments from "./components/Fragments";
 import Calculator from "./components/react-ws/calculator/Calculator";
+import TodoApp from "./components/react-ws/Todo-App/My_Todo";
 
 function App() {
   return (
@@ -71,7 +72,7 @@ function App() {
 
           <Route path="/homerouting" element={<HomeRouting />} />
           <Route path="/basic-calc" element={<Calculator />} />
-          <Route path="/todo-app" element={<HomeRouting />} />
+          <Route path="/todo-app" element={<TodoApp />} />
         </Routes>
       </BrowserRouter>
     </div>
