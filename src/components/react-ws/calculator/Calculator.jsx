@@ -1,16 +1,16 @@
 import React, { useState } from "react";
+import "./Calculator.css";
 
 function Calculator() {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
   const CalculatorTitle = (props) => {
-    console.log(props);
-    return <div className="calculator-title ui header">{props.value}</div>;
+    return <div className="calculator-title">{props.value}</div>;
   };
 
   const OutputScreenRow = (props) => {
     return (
-      <div className="screen-row ui input">
+      <div className="calc-screen-row">
         <input type="text" readOnly value={props.value} />
       </div>
     );
@@ -18,13 +18,9 @@ function Calculator() {
 
   const OutputScreen = () => {
     return (
-      <div className="screen">
+      <div className="calc-screen">
         <OutputScreenRow value={question} />
-        <br></br>
-        <br></br>
         <OutputScreenRow value={answer} />
-        <br></br>
-        <br></br>
       </div>
     );
   };
@@ -76,35 +72,35 @@ function Calculator() {
   };
 
   return (
-    <div className="frame">
+    <div className="calc-frame">
       <CalculatorTitle value="Basic Calculator" />
       <div className="mainCalc">
         <OutputScreen />
-        <div className="button-row">
+        <div className="calc-button-row">
           <Button content="primary" label={"Clear"} handleClick={handleClick} />
           <Button label={"Delete"} handleClick={handleClick} />
           <Button label={"."} handleClick={handleClick} />
           <Button label={"/"} handleClick={handleClick} />
         </div>
-        <div className="button-row">
+        <div className="calc-button-row">
           <Button label={"7"} handleClick={handleClick} />
           <Button label={"8"} handleClick={handleClick} />
           <Button label={"9"} handleClick={handleClick} />
           <Button label={"*"} handleClick={handleClick} />
         </div>
-        <div className="button-row">
+        <div className="calc-button-row">
           <Button label={"4"} handleClick={handleClick} />
           <Button label={"5"} handleClick={handleClick} />
           <Button label={"6"} handleClick={handleClick} />
           <Button label={"-"} handleClick={handleClick} />
         </div>
-        <div className="button-row">
+        <div className="calc-button-row">
           <Button label={"1"} handleClick={handleClick} />
           <Button label={"2"} handleClick={handleClick} />
           <Button label={"3"} handleClick={handleClick} />
           <Button label={"+"} handleClick={handleClick} />
         </div>
-        <div className="button-row">
+        <div className="calc-button-row">
           <Button label={"0"} handleClick={handleClick} />
           <Button label={"="} handleClick={handleClick} />
         </div>
