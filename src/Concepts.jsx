@@ -100,7 +100,7 @@ function Concepts() {
             </ul>
           </div>
 
-          <div className="col" style={{ visibility: "hidden" }}>
+          <div className="col">
             <ul className="concepts-table">
               <h3>Session 6</h3>
               <Link to="/hooks" className="concept-links">

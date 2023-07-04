@@ -24,7 +24,8 @@ import Departments from "./components/Routing/Departments";
 import Projects from "./components/Routing/Projects";
 import Fragments from "./components/Fragments";
 import Calculator from "./components/react-ws/calculator/Calculator";
-import TodoApp from "./components/react-ws/Todo-App/My_Todo";
+import TodoApp from "./components/react-ws/todo-app/My_Todo";
+import Hooks from "./components/Hooks/Hooks";
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
           <Route path="/homerouting" element={<HomeRouting />} />
           <Route path="/basic-calc" element={<Calculator />} />
           <Route path="/todo-app" element={<TodoApp />} />
+          <Route path="/hooks" element={<Hooks />} />
         </Routes>
       </BrowserRouter>
     </div>
