@@ -24,8 +24,14 @@ import Departments from "./components/Routing/Departments";
 import Projects from "./components/Routing/Projects";
 import Fragments from "./components/Fragments";
 import Calculator from "./components/react-ws/calculator/Calculator";
-import TodoApp from "./components/react-ws/todo-app/My_Todo";
+import TodoApp from "./components/react-ws/Todo-App/My_Todo";
 import Hooks from "./components/Hooks/Hooks";
+import XMLcall from "./components/Service-Calls/XMLcall";
+import AxiosCall from "./components/Service-Calls/AxiosCall";
+import FetchCall from "./components/Service-Calls/FetchCall";
+import Objectusestate from "./components/Immutability/Objectusestate";
+import Arrayusestate from "./components/Immutability/Arrayusestate";
+import AxiosBasic from "./components/Service-Calls/AxiosBasic";
 
 function App() {
   return (
@@ -75,6 +81,10 @@ function App() {
           <Route path="/basic-calc" element={<Calculator />} />
           <Route path="/todo-app" element={<TodoApp />} />
           <Route path="/hooks" element={<Hooks />} />
+
+          <Route path="/xmlcall" element={<AxiosCall />} />
+          <Route path="/immutable" element={<Arrayusestate />} />
+          <Route path="/hoc" element={<XMLcall />} />
         </Routes>
       </BrowserRouter>
     </div>

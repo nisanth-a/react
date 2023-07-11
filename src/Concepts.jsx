@@ -112,28 +112,51 @@ function Concepts() {
             </ul>
           </div>
         </div>
-        {/* <div className="row-concepts">
+        <div className="row-concepts">
           <div className="col">
             <ul className="concepts-table">
               <h3>Session 7</h3>
-              <Link to="/forms" className="concept-links">
-                <li className="table-contents">Forms</li>
+              <Link to="/xmlcall" className="concept-links">
+                <li className="table-contents">Service Calls</li>
               </Link>
-              <Link to="/lifting-state-up" className="concept-links">
-                <li className="table-contents">Lifting State Up</li>
-              </Link>
-              <Link to="/composition-inheritance" className="concept-links">
-                <li className="table-contents">Composition vs Inheritance</li>
-              </Link>
-              <Link to="/type-checking" className="concept-links">
-                <li className="table-contents">Type Checking</li>
-              </Link>
-              <Link to="/uni-directional" className="concept-links">
-                <li className="table-contents">Uni-Directional Data Flow</li>
+              <Link to="/immutable" className="concept-links">
+                <li className="table-contents">Immutability</li>
               </Link>
             </ul>
           </div>
-        </div> */}
+          <div style={{ visibility: "hidden" }}>
+            <div className="col">
+              <ul className="concepts-table">
+                <h3>Session 7</h3>
+                <Link to="/xmlcall" className="concept-links">
+                  <li className="table-contents">Service Calls</li>
+                </Link>
+                <Link to="/immutable" className="concept-links">
+                  <li className="table-contents">Immutability</li>
+                </Link>
+                <Link to="/hoc" className="concept-links">
+                  <li className="table-contents">Higher Order Components</li>
+                </Link>
+              </ul>
+            </div>
+          </div>
+          <div style={{ visibility: "hidden" }}>
+            <div className="col">
+              <ul className="concepts-table">
+                <h3>Session 7</h3>
+                <Link to="/xmlcall" className="concept-links">
+                  <li className="table-contents">Service Calls</li>
+                </Link>
+                <Link to="/immutable" className="concept-links">
+                  <li className="table-contents">Immutability</li>
+                </Link>
+                <Link to="/hoc" className="concept-links">
+                  <li className="table-contents">Higher Order Components</li>
+                </Link>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
