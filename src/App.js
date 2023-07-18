@@ -32,6 +32,7 @@ import FetchCall from "./components/Service-Calls/FetchCall";
 import Objectusestate from "./components/Immutability/Objectusestate";
 import Arrayusestate from "./components/Immutability/Arrayusestate";
 import AxiosBasic from "./components/Service-Calls/AxiosBasic";
+import CounterFunctional from "./components/Redux/CounterFunctional";
 
 function App() {
   return (
@@ -85,6 +86,8 @@ function App() {
           <Route path="/xmlcall" element={<AxiosCall />} />
           <Route path="/immutable" element={<Arrayusestate />} />
           <Route path="/hoc" element={<XMLcall />} />
+
+          <Route path="/redux" element={<CounterFunctional />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -124,18 +124,15 @@ function Concepts() {
               </Link>
             </ul>
           </div>
-          <div style={{ visibility: "hidden" }}>
+          <div>
             <div className="col">
               <ul className="concepts-table">
-                <h3>Session 7</h3>
-                <Link to="/xmlcall" className="concept-links">
-                  <li className="table-contents">Service Calls</li>
+                <h3>Session 8</h3>
+                <Link to="/redux" className="concept-links">
+                  <li className="table-contents">Redux</li>
                 </Link>
-                <Link to="/immutable" className="concept-links">
-                  <li className="table-contents">Immutability</li>
-                </Link>
-                <Link to="/hoc" className="concept-links">
-                  <li className="table-contents">Higher Order Components</li>
+                <Link to="/actions" className="concept-links">
+                  <li className="table-contents">Actions & Reducers</li>
                 </Link>
               </ul>
             </div>
@@ -143,7 +140,7 @@ function Concepts() {
           <div style={{ visibility: "hidden" }}>
             <div className="col">
               <ul className="concepts-table">
-                <h3>Session 7</h3>
+                <h3>Session 9</h3>
                 <Link to="/xmlcall" className="concept-links">
                   <li className="table-contents">Service Calls</li>
                 </Link>
