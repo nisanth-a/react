@@ -1,28 +1,21 @@
-// UserThunk.js
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchUserThunk } from "./storeThunk";
+import { fetchUserRequest } from "./Actions";
 
-const UserThunk = () => {
+const UserSaga = () => {
   const { loading, user, error } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   const handleFetchUser = () => {
-    dispatch(fetchUserThunk(1));
+    dispatch(fetchUserRequest(3)); // Dispatch the action to fetch user data
   };
 
   return (
     <div>
-      <h2 className="ui header">User Details - Redux Thunk</h2>
-      <button
-        className="ui primary button"
-        onClick={handleFetchUser}
-        disabled={loading}
-      >
+      <h2>User Details - Redux Saga</h2>
+      <button className="ui green button" onClick={handleFetchUser} disabled={loading}>
         {loading ? "Loading..." : "Fetch User"}
       </button>
-      <br></br>
-      <br></br>
       {error && <p>Error: {error}</p>}
       {user && (
         <div className="ui black message">
@@ -41,4 +34,4 @@ const UserThunk = () => {
   );
 };
 
-export default UserThunk;
+export default UserSaga;
