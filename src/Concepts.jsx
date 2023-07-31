@@ -137,15 +137,15 @@ function Concepts() {
               </ul>
             </div>
           </div>
-          <div style={{ visibility: "hidden" }}>
+          <div>
             <div className="col">
               <ul className="concepts-table">
                 <h3>Session 9</h3>
-                <Link to="/xmlcall" className="concept-links">
-                  <li className="table-contents">Service Calls</li>
+                <Link to="/redux-middleware-thunk" className="concept-links">
+                  <li className="table-contents">Redux Middleware - Thunk</li>
                 </Link>
-                <Link to="/immutable" className="concept-links">
-                  <li className="table-contents">Immutability</li>
+                <Link to="/redux-middleware-saga" className="concept-links">
+                  <li className="table-contents">Redux Middleware - Saga</li>
                 </Link>
                 <Link to="/hoc" className="concept-links">
                   <li className="table-contents">Higher Order Components</li>

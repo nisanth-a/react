@@ -1,10 +1,12 @@
-const initialState = 0;
+const initialState = 30000;
 const modifyNumber = (state = initialState, action) => {
   switch (action.type) {
     case "INCREMENT":
-      return state + 1;
+      return state + 10000;
     case "DECREMENT":
-      return state - 1;
+      return state - 10000;
+    case "RESET":
+      return initialState;
     default:
       return state;
   }

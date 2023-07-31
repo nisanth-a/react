@@ -33,6 +33,8 @@ import Objectusestate from "./components/Immutability/Objectusestate";
 import Arrayusestate from "./components/Immutability/Arrayusestate";
 import AxiosBasic from "./components/Service-Calls/AxiosBasic";
 import CounterFunctional from "./components/Redux/CounterFunctional";
+import UserThunkWrapper from "./components/Redux Middleware/UserThunkWrapper";
+import UserSagaWrapper from "./components/Redux Middleware/UserSagaWrapper";
 
 function App() {
   return (
@@ -88,6 +90,12 @@ function App() {
           <Route path="/hoc" element={<XMLcall />} />
 
           <Route path="/redux" element={<CounterFunctional />} />
+
+          <Route
+            path="/redux-middleware-thunk"
+            element={<UserThunkWrapper />}
+          />
+          <Route path="/redux-middleware-saga" element={<UserSagaWrapper />} />
         </Routes>
       </BrowserRouter>
     </div>
