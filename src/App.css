@@ -56,3 +56,9 @@ input[type="password"] {
   text-decoration: underline #61dafb;
   margin-top: 30px !important;
 }
+.lazy_image {
+  margin-top: 1200px;
+}
+.normal_image {
+  margin-top: 300px;
+}

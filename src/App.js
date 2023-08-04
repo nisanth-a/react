@@ -35,6 +35,10 @@ import AxiosBasic from "./components/Service-Calls/AxiosBasic";
 import CounterFunctional from "./components/Redux/CounterFunctional";
 import UserThunkWrapper from "./components/Redux Middleware/UserThunkWrapper";
 import UserSagaWrapper from "./components/Redux Middleware/UserSagaWrapper";
+import ClickIncrease from "./components/HOC/ClickIncrease";
+import HoverIncrease from "./components/HOC/HoverIncrease";
+import Lazy_Loading from "./components/Lazy_Loading/Lazy_Loading";
+
 
 function App() {
   return (
@@ -87,7 +91,7 @@ function App() {
 
           <Route path="/xmlcall" element={<AxiosCall />} />
           <Route path="/immutable" element={<Arrayusestate />} />
-          <Route path="/hoc" element={<XMLcall />} />
+          {/* <Route path="/hoc" element={<XMLcall />} /> */}
 
           <Route path="/redux" element={<CounterFunctional />} />
 
@@ -96,6 +100,8 @@ function App() {
             element={<UserThunkWrapper />}
           />
           <Route path="/redux-middleware-saga" element={<UserSagaWrapper />} />
+          <Route path="/hoc" element={<><ClickIncrease /><HoverIncrease/></>} />
+          <Route path="/lazy-loading" element={<Lazy_Loading />} />
         </Routes>
       </BrowserRouter>
     </div>
