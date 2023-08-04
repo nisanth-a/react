@@ -147,8 +147,14 @@ function Concepts() {
                 <Link to="/redux-middleware-saga" className="concept-links">
                   <li className="table-contents">Redux Middleware - Saga</li>
                 </Link>
+                {/* <Link to="/hoc" className="concept-links">
+                  <li className="table-contents">Higher Order Components</li>
+                </Link> */}
                 <Link to="/hoc" className="concept-links">
                   <li className="table-contents">Higher Order Components</li>
+                </Link>
+                <Link to="/lazy-loading" className="concept-links">
+                  <li className="table-contents">Routing with Lazy Loading</li>
                 </Link>
               </ul>
             </div>
