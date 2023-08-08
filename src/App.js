@@ -38,7 +38,8 @@ import UserSagaWrapper from "./components/Redux Middleware/UserSagaWrapper";
 import ClickIncrease from "./components/HOC/ClickIncrease";
 import HoverIncrease from "./components/HOC/HoverIncrease";
 import Lazy_Loading from "./components/Lazy_Loading/Lazy_Loading";
-
+import Welcome from "./components/ErrorBoundary/Welcome";
+import EventComponent from "./components/ErrorBoundary/EventComponent";
 
 function App() {
   return (
@@ -100,8 +101,18 @@ function App() {
             element={<UserThunkWrapper />}
           />
           <Route path="/redux-middleware-saga" element={<UserSagaWrapper />} />
-          <Route path="/hoc" element={<><ClickIncrease /><HoverIncrease/></>} />
+          <Route
+            path="/hoc"
+            element={
+              <>
+                <ClickIncrease />
+                <HoverIncrease />
+              </>
+            }
+          />
           <Route path="/lazy-loading" element={<Lazy_Loading />} />
+          <Route path="/errorboundaries" element={<Welcome />} />
+          <Route path="/eventComponent" element={<EventComponent />} />
         </Routes>
       </BrowserRouter>
     </div>
