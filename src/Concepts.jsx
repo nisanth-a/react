@@ -160,6 +160,17 @@ function Concepts() {
             </div>
           </div>
         </div>
+
+        <div className="row-concepts">
+          <div className="col">
+            <ul className="concepts-table">
+              <h3>Session 10</h3>
+              <Link to="/errorboundaries" className="concept-links">
+                <li className="table-contents">Error Boundary</li>
+              </Link>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );
